@@ -1,0 +1,343 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: "Georgia"; 
+    src: url("./fonts/Georgia/georgia.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    } 
+.container {
+    max-width: 1570px;
+    margin: auto;
+    padding: 0 30px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+.nav__list {
+    display: flex;
+    list-style: none;
+}
+.nav__item:not(:last-child) {
+    margin-right: 72px;
+}
+.nav__link {
+    color: #292929;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+}
+.nav__link:hover {
+    opacity: 0.5;
+    transition: all 1s ease;
+}
+.header__btns {
+    display: flex;
+    align-items: center;
+}
+.btn {
+    display: block;
+    font-size: 20px;
+    line-height: 25px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    text-decoration: none;
+    width: fit-content;
+}
+.btn--green {
+    background: #01996D;
+    border: 1px solid #01996D;
+    border-radius: 4px;
+    padding: 20px 50px;
+    color: #FFFFFF;
+}
+.header__btn--white {
+    color: #000000;
+    margin-right: 30px;
+}
+.header__btn--green {
+    padding: 13px 50px;
+}
+.btn:hover {
+    opacity: 0.5;
+    transition: all 1s ease;
+}
+.main {
+    background: url(./img/BG.jpg) no-repeat center / cover;
+    padding: 175px 0 336px;
+}
+.main__text-wrap {
+    width: 30%;
+}
+.main__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 65px;
+    line-height: 74px;
+    color: #01996D;
+    font-family: 'Georgia' ,serif;
+}
+.main__text {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 31px;
+    color: #484848;
+    margin-top: 30px;
+}
+.main__btn {
+    margin-top: 45px;
+}
+.about {
+    padding-top: 181px;
+}
+.about__text-block {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 150px;
+}
+.about__text-wrap {
+    width: 40%;
+}
+.about__text-super {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 157%;
+    color: #424242;
+}
+.about__title {
+    font-family: 'Georgia', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 157%;
+    color: #01996D;
+}
+.about__text {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: #424242;
+    width: 43%;
+    margin-top: 57px;
+}
+.cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 250px;
+}
+.card {
+    width: 390px;
+    position: relative;
+}
+.card__title {
+    font-family: 'Georgia', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 150%;
+    text-align: center;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    padding-top: 130px;
+    padding-left: 80px;
+}
+.card::before {
+    display: block;
+    font-family: 'Georgia', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 150px;
+    line-height: 150%;
+    text-align: center;
+    color: rgba(1, 153, 109, 0.2);
+    position: absolute;
+    top: 0;
+}
+.card__title--2 {
+    padding-left: 65px;
+}
+.card__title--3 {
+    padding-left: 120px;
+}
+.card--1::before {
+    content: '01';
+}
+.card--2::before {
+    content: '02';
+}
+.card--3::before {
+    content: '03';
+}
+.card__text {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: #424242;
+    margin-top: 60px;
+    max-width: 98%;
+}
+.card__img--1 {
+    margin-top: 30px;
+}
+.card__img--2 {
+    margin-top: 90px;
+}
+.card__img--3 {
+    margin-top: 90px;
+}
+.testimonials {
+    background: #245852;
+    padding-top: 229px;
+    padding-bottom: 177px;
+}
+.testimonials__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.testimonials__text-wrap {
+    max-width: 40%;
+}
+.testimonials__title {
+    font-family: 'Georgia', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 157%;
+    color: #FFFFFF;
+}
+.testimonials__text {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 157%;
+    color: #FFFFFF;
+    margin-top: 33px;
+}
+.testimonials__btn {
+    margin-top: 57px;
+}
+.video {
+    display: block;
+    border-radius: 16px;
+    object-fit: cover;
+    width: 895px;
+    height: 513px;
+}
+.testimonials__img-wrap {
+    position: relative;
+}
+.testimonials__img-wrap::after {
+    content: '';
+    display: block;
+    width: 81px;
+    height: 81px;
+    background: url('./img/play.png') no-repeat center / cover;
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    margin-top: -40px;
+    left: 50%;
+    margin-left: -40px;
+}
+.product {
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 168px;
+}
+.product__img-wrap {
+    position: relative;
+}
+.product__img {
+    padding-left: 100px;
+}
+.product__img-wrap::before {
+    content: '';
+    display: block;
+    width: 296.14px;
+    height: 293.9px;
+    background: url('./img/card.png');
+    position: absolute;
+    filter: drop-shadow(0px 3.62249px 18.1125px rgba(165, 165, 165, 0.25));
+    bottom: -76px;
+    left: 20px;
+}
+.product__text-wrap {
+    max-width: 40%;
+}
+.product__super {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 157%;
+    color: #424242;
+}
+.product__title {
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 157%;
+    color: #01996D;
+    margin-top: 10px;
+}
+.product__text {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 144.5%;
+    color: #484848;
+    margin-top: 20px;
+    max-width: 80%;
+}
+.product__btn {
+    margin-top: 40px;
+}
+.footer {
+    background: #245852;
+    padding-top: 95px;
+    padding-bottom: 144px;
+}
+.footer__list {
+    list-style: none;
+}
+.footer__list-item {
+    margin-top: 60px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+}
+.footer__item-link {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.footer__list-item:hover {
+    opacity: 0.5;
+    transition: all 1s ease;
+}
